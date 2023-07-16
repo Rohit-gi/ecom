@@ -23,9 +23,12 @@ right: ${(props) => props.direction === "right" && "10px"};
 margin: auto;
 cursor: pointer;
 opacity: 0.5;
+z-index: 2;
 `
 const Wrapper = styled.div`
 height: 100%;
+display: flex;
+transform: 
 `
 
 const Slide = styled.div`
@@ -47,21 +50,24 @@ const Image = styled.img
   `
 height: 80%
 `
-const Title = styled.h1``
+const Title = styled.h1`
+  font-size`
 const Desc = styled.h1``
 const Button = styled.h1``
 
 
 const Slider = () => {
+    const [slideIndex, setSlideIndex] = useState(0);
+
+    const handleClick = (direction) => {};
+
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper>
-        <Slide>
-
-        </Slide>
+        <Slide bg="f5fafd">
         <ImgContainer>
           <Image src="/one.jpg"/>
         </ImgContainer>
@@ -70,8 +76,29 @@ const Slider = () => {
           <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
           <Button>SHOP NOW</Button>
         </InfoContainer>
+      </Slide>
+      <Slide bg="fcf1ed">
+        <ImgContainer>
+          <Image src="/one.jpg"/>
+        </ImgContainer>
+        <InfoContainer>
+          <Title>SUMMER SALE</Title>
+          <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
+          <Button>SHOP NOW</Button>
+        </InfoContainer>
+      </Slide>
+      <Slide bg="fbf0f4">
+        <ImgContainer>
+          <Image src="/one.jpg"/>
+        </ImgContainer>
+        <InfoContainer>
+          <Title>SUMMER SALE</Title>
+          <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
+          <Button>SHOP NOW</Button>
+        </InfoContainer>
+      </Slide>
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
