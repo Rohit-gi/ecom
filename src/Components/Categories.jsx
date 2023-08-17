@@ -8,7 +8,7 @@ const Container = styled.div`
     justify-content: space-between; 
 `;
 
-const Categories = () => {
+const Categories = () => {  
   return (
     <Container>
       {categories.map((item)=>(
