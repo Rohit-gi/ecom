@@ -8,11 +8,14 @@ background-color: #fcf5f5;
 display: flex;
 align-items: center;
 flex-direction: column;
+justify-content: center;
 `
+
 const Title = styled.h1`
 font-size: 70px;
 margin-bottom: 20px;
 `
+
 const Desc = styled.div`
 font-size: 24px;
 font-wieght: 300;
@@ -40,7 +43,6 @@ border: none;
 background-color: teal;
 color: white;
 `
-
 
 const Newsletter = () => {
   return (
