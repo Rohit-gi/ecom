@@ -5,6 +5,9 @@ import Product from "./Product"
 const Container = styled.div`
     padding: 20px;
     display: flex;
+    flex-wrap: wrap; 
+    justfy-content: flex-start;
+    background-color: #f5fbfd;
 `
 
 const Products = () => {
