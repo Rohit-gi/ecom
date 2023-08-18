@@ -1,4 +1,3 @@
-import { Description } from '@mui/icons-material'
 import { Send } from '@mui/icons-material'
 import styled from 'styled-components'
 
