@@ -6,7 +6,7 @@ const Container = styled.div`
     padding: 20px;
     display: flex;
     flex-wrap: wrap; 
-    justfy-content: flex-start;
+    justfy-content: space-between;
     background-color: #f5fbfd;
 `
 

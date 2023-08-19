@@ -15,7 +15,7 @@ align-items: center;
 justify-content: center;
 `
 const Container = styled.div`
-flex: 0 0 21%;
+flex: 1 1 20%;
 margin: 5px;
 min-width: 280px;
 height: 350px;
